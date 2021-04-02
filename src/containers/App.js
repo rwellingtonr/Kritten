@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 import { kittens } from '../kittens';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
 
 class App extends Component {
     // Constructor the state and its parameters
@@ -38,7 +39,9 @@ class App extends Component {
                 <h1 className='f1'>Kitten Friends</h1>
                 <SearchBox searchChange={ this.onSearchChange }/>
                 <Scroll>
-                    <CardList kittens={searchedKitten} />
+                    <ErrorBoundry>
+                        <CardList kittens={searchedKitten} />
+                    </ErrorBoundry>
                 </Scroll>    
             </div>
         );
