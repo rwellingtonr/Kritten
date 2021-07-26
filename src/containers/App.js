@@ -15,12 +15,6 @@ class App extends Component {
     }
   }
 
-  // Just for random names
-  // componentDidMount(){
-  //     fetch('./kittens.js')
-  //     .then(resp => {return resp.json();})
-  //     .then(cat => {this.setState({kittens: cat})})
-  // }
   // Function when the search field changes
   onSearchChange = (event) => {
     this.setState({ searchField: event.target.value })
@@ -32,9 +26,10 @@ class App extends Component {
     const searchedKitten = kittens.filter((cat) => {
       return cat.name.toLowerCase().includes(searchField.toLowerCase())
     })
+
     return (
       <div className="tc">
-        <div style={{ minHeight: "20vh" }}>
+        <div style={{ height: "180px" }}>
           <h1 className="f1">Kitten Friends</h1>
           <SearchBox searchChange={this.onSearchChange} />
         </div>

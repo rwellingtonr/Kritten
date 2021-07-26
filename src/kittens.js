@@ -7,7 +7,7 @@ export const kittens = [
   {
     id: 2,
     name: "Mrs. Ana",
-    prof: "receptionist",
+    prof: "Receptionist",
   },
   {
     id: 3,
@@ -24,7 +24,6 @@ export const kittens = [
     name: "Mr. Maikon",
     prof: "The Rookie",
   },
-
   {
     id: 7,
     name: "Mr. Wellington",
@@ -53,6 +52,6 @@ export const kittens = [
   {
     id: 12,
     name: "Mr. Marcos",
-    prof: "Telemarketing",
+    prof: "Barber Man",
   },
 ]
