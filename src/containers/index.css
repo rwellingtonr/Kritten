@@ -1,6 +1,7 @@
 html {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  height: 100vh;
 }
 body {
   margin: 0;
@@ -9,10 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to left, #10042f, #3f096a);
   overflow: hidden;
-}
-html,
-body {
-  height: 100%;
 }
 
 h1 {
