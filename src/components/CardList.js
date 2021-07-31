@@ -12,6 +12,11 @@ const CardList = ({ kittens }) => {
       />
     )
   })
-  return <div>{cardComponent}</div>
+  return (
+    <div>
+      {cardComponent}
+      <div style={{ height: "5vh" }} />
+    </div>
+  )
 }
 export default CardList

@@ -5,13 +5,12 @@ const Scroll = (props) => {
     <div
       style={{
         overflowY: "scroll",
-        height: window.screen.availHeight * 0.8,
+        height: "75vh",
         border: "2px solid black",
         scrollbarColor: "transparent",
       }}
     >
       {props.children}
-      <div style={{ height: window.screen.availHeight * 0.2 }} />
     </div>
   )
 }
